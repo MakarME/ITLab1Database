@@ -1,0 +1,25 @@
+:root{ --bg:#f7f7f8; --panel:#fff; --accent:#2b6cb0 }
+body{ margin:0; font-family:Inter, Arial, Helvetica, sans-serif; background:var(--bg) }
+.app-root{ display:flex; height:100vh }
+.left-pane{ width:240px; background:var(--panel); border-right:1px solid #ddd; display:flex; flex-direction:column }
+.left-header{ padding:12px; font-weight:600; border-bottom:1px solid #eee }
+.table-list{ padding:8px; overflow:auto }
+.table-list ul{ list-style:none; padding:0; margin:0 }
+.table-list li{ padding:8px; border-radius:4px; cursor:pointer }
+.table-list li.sel{ background:#e6f2ff }
+.left-buttons{ padding:8px; display:flex; flex-direction:column; gap:6px }
+.left-buttons button{ padding:8px }
+.center-pane{ flex:1; padding:12px; overflow:auto }
+.empty{ padding:24px; color:#666 }
+.table-view{ background:var(--panel); padding:12px; border-radius:8px }
+.tv-header{ font-weight:600; margin-bottom:8px }
+.tv-actions{ display:flex; gap:8px; margin-bottom:8px }
+.file-btn input{ display:none }
+.data-table{ width:100%; border-collapse:collapse }
+.data-table th, .data-table td{ border:1px solid #eee; padding:8px; text-align:left }
+.modal{ background:var(--panel); padding:16px; width:720px; max-width:95%; margin:40px auto; border-radius:8px }
+.overlay{ position:fixed; inset:0; background:rgba(0,0,0,0.35) }
+.form-grid{ display:grid; grid-template-columns:1fr 1fr; gap:8px }
+.form-row{ display:flex; flex-direction:column; gap:4px; margin-bottom:6px }
+.field-row{ display:flex; gap:8px; align-items:center; margin-bottom:6px }
+.modal-actions{ display:flex; gap:8px; justify-content:flex-end; margin-top:12px }
