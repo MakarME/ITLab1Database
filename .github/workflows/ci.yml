@@ -47,6 +47,7 @@ jobs:
 
       - name: Display surefire summary (optional)
         if: always()
+        shell: bash
         run: |
           echo "---- surefire files ----"
           ls -la target/surefire-reports || true
